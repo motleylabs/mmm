@@ -31,7 +31,7 @@ address = "migrxZFChTqicHpNa1CAjPcF29Mui2JU2q4Ym7qQUTi"
 program = "tests/deps/mpl_migration_validator.so" # custom migration validator with only waiting period updated
 
 [programs.localnet]
-mmm = "mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc"
+mmm = "cLawU4m5wgQ7nkwdkX6yRdkZ5NR6yN8dNuCmEiqTjk6"
 
 [scripts]
 test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.spec.ts"

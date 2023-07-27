@@ -49,7 +49,7 @@ export const getEmptyAllowLists = (num: number) => {
 };
 
 export const MMMProgramID = new PublicKey(
-  'mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc',
+  'cLawU4m5wgQ7nkwdkX6yRdkZ5NR6yN8dNuCmEiqTjk6',
 );
 
 const dummyKeypair = new anchor.Wallet(new anchor.web3.Keypair());

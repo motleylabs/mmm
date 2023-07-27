@@ -4,8 +4,8 @@ MMM is an open source and secure AMM protocol on Solana. It enables the multi-po
 
 | Network | Program Address |
 | ----------- | ----------- |
-| Devnet  | mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc |
-| Mainnet | mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc |
+| Devnet  | cLawU4m5wgQ7nkwdkX6yRdkZ5NR6yN8dNuCmEiqTjk6 |
+| Mainnet | cLawU4m5wgQ7nkwdkX6yRdkZ5NR6yN8dNuCmEiqTjk6 |
 
 ## Build status
 ![github ci status](https://github.com/coralcube-oss/mmm/actions/workflows/test.yml/badge.svg?branch=main)

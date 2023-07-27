@@ -2,7 +2,7 @@
 
 use anchor_lang::{prelude::*, AnchorDeserialize, AnchorSerialize};
 
-declare_id!("mmm3XBJg5gk8XJxEKBvdgptZz6SgK4tXvn36sodowMc");
+declare_id!("cLawU4m5wgQ7nkwdkX6yRdkZ5NR6yN8dNuCmEiqTjk6");
 
 mod ata;
 mod constants;
