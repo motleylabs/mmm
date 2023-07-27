@@ -11,7 +11,7 @@
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
-  "include": ["./src"],
+  "include": ["./src"]
 }
