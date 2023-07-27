@@ -10,7 +10,6 @@ use mpl_token_metadata::{
     pda::{find_master_edition_account, find_metadata_account},
     state::{Metadata, TokenMetadataAccount, TokenStandard},
 };
-use open_creator_protocol::state::Policy;
 use std::convert::TryFrom;
 
 // copied from mpl-token-metadata
@@ -390,18 +389,10 @@ pub fn try_close_sell_state<'info>(
 }
 
 pub fn get_metadata_royalty_bp(
-    total_price: u64,
+    _total_price: u64,
     parsed_metadata: &Metadata,
-    policy: Option<&Account<'_, Policy>>,
 ) -> u16 {
-    match policy {
-        None => parsed_metadata.data.seller_fee_basis_points,
-        Some(p) => match &p.dynamic_royalty {
-            None => parsed_metadata.data.seller_fee_basis_points,
-            Some(dynamic_royalty) => dynamic_royalty
-                .get_royalty_bp(total_price, parsed_metadata.data.seller_fee_basis_points),
-        },
-    }
+    parsed_metadata.data.seller_fee_basis_points
 }
 
 #[allow(clippy::too_many_arguments)]

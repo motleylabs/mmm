@@ -311,7 +311,7 @@ pub fn handler<'info>(
         .checked_add(lp_fee)
         .ok_or(MMMErrorCode::NumericOverflow)?;
 
-    let metadata_royalty_bp = get_metadata_royalty_bp(total_price, &parsed_metadata, None);
+    let metadata_royalty_bp = get_metadata_royalty_bp(total_price, &parsed_metadata);
     let royalty_paid = pay_creator_fees_in_sol(
         10000,
         total_price,
